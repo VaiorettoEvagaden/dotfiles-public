@@ -24,6 +24,7 @@ Gemfile.lock
 node_modules
 bower_components
 fishd.*
+packer_compiled.lua
 
 # Vim
 Session.vim
