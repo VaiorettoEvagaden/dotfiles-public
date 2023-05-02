@@ -116,7 +116,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Remove Windows $ENV
-PATH=$(echo :$PATH: |sed -e 's,:/mnt/c/Program\ Files/nodejs:,:,g' -e 's/^://')
+PATH=$(echo :$PATH: |sed -e 's,:/mnt/c/Program\ Files/nodejs:,:,g' -e 's/^://' -e 's/:$//')
 
 # golang
 export PATH=$PATH:/usr/local/go/bin
